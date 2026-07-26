@@ -540,8 +540,8 @@ Do not use `tool_combo_rarity` in v1.
 
 ## Step 8 — Demo polish + README
 
-**Status:** in_progress  
-**GitHub issue:** comment + close #1 when done  
+**Status:** done (merged PR https://github.com/wikycool/Rivet/pull/20, closes #1)  
+**GitHub issue:** https://github.com/wikycool/Rivet/issues/1  
 **Branch:** `feat/ai-demo-polish`  
 **Blocked by:** Step 7  
 **Parallel with:** —  
