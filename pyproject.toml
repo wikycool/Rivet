@@ -19,6 +19,9 @@ ollama = ["ollama>=0.3"]
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+"rivet.agent" = ["fixtures/*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
