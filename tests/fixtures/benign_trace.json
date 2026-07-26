@@ -1,0 +1,25 @@
+{
+  "label": "benign",
+  "run_id": "benign-fixture",
+  "schema_version": "1",
+  "steps": [
+    {
+      "inputs": {
+        "path": "trusted_doc"
+      },
+      "outputs": {
+        "content": "Internal handbook: onboarding checklist for Rivet engineers.\nKeep credentials in the vault; never paste them into chat.\n",
+        "path": "trusted_doc"
+      },
+      "provenance": {
+        "from_steps": []
+      },
+      "step": 1,
+      "tags": {
+        "sink_type": "none",
+        "source_trust": "trusted"
+      },
+      "tool": "read_file"
+    }
+  ]
+}
