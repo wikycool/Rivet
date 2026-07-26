@@ -439,7 +439,7 @@ Path: trusted `read_file` only; no `query_db` / `send_email`. Label `benign`.
 
 ## Step 6 — Graph features from Trace
 
-**Status:** in_progress  
+**Status:** done (merged PR https://github.com/wikycool/Rivet/pull/18)  
 **GitHub issue:** https://github.com/wikycool/Rivet/issues/7  
 **Branch:** `feat/ai-graph-features`  
 **Blocked by:** Step 4, Step 5  
