@@ -2,11 +2,11 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Literal
 
-from rivet.agent.llm import FinalAction, LLMClient, ToolCallAction
+from rivet.agent.llm import FinalAction, LLMClient, StubToolCall, ToolCallAction
 from rivet.agent.tools import TOOLS, ToolResult
 from rivet.trace import Provenance, Step, Tags, Trace, dump_trace
 
@@ -17,6 +17,8 @@ Label = Literal["benign", "attack"]
 class Scenario:
     name: str
     label: Label
+    # Optional StubLLM plan for CLI runs (Steps 4/5 fill this in).
+    stub_plan: tuple[StubToolCall, ...] = field(default_factory=tuple)
 
 
 def _invoke_tool(name: str, inputs: dict[str, Any]) -> ToolResult:
