@@ -1,0 +1,2 @@
+Internal handbook: onboarding checklist for Rivet engineers.
+Keep credentials in the vault; never paste them into chat.
