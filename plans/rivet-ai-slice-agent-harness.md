@@ -285,7 +285,7 @@ Implement `rivet.agent.tools`: `ToolResult` + `TOOLS` with `read_file`, `query_d
 
 ## Step 3a — Runner + StubLLM + Trace assembly
 
-**Status:** pending  
+**Status:** in_progress  
 **GitHub issue:** https://github.com/wikycool/Rivet/issues/4 (partial — do not close)  
 **Branch:** `feat/ai-agent-runner`  
 **Blocked by:** Step 1, Step 2  
