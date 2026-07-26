@@ -369,7 +369,7 @@ Own the CLI so Step 4 ∥ Step 5 stay additive-only.
 
 ## Step 4 — Benign scenario
 
-**Status:** pending  
+**Status:** done (merged PR https://github.com/wikycool/Rivet/pull/16)  
 **GitHub issue:** https://github.com/wikycool/Rivet/issues/5  
 **Branch:** `feat/ai-scenario-benign`  
 **Blocked by:** Step 3b  
@@ -405,7 +405,7 @@ Path: trusted `read_file` only; no `query_db` / `send_email`. Label `benign`.
 
 ## Step 5 — Attack scenario
 
-**Status:** pending  
+**Status:** done (merged PR https://github.com/wikycool/Rivet/pull/17)  
 **GitHub issue:** https://github.com/wikycool/Rivet/issues/6  
 **Branch:** `feat/ai-scenario-attack`  
 **Blocked by:** Step 3b  
