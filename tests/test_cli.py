@@ -19,8 +19,8 @@ def test_unknown_scenario_exits_nonzero() -> None:
     assert "known" in combined
 
 
-def test_registry_importable_and_empty() -> None:
+def test_registry_importable() -> None:
     from rivet.agent.scenarios import REGISTRY
 
     assert isinstance(REGISTRY, dict)
-    assert REGISTRY == {}
+    assert "benign" in REGISTRY
