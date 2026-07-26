@@ -205,7 +205,7 @@ py -3.11 -m venv .venv
 
 ## Step 1 — Trace schema + JSON validation
 
-**Status:** pending  
+**Status:** done (merged PR https://github.com/wikycool/Rivet/pull/11)  
 **GitHub issue:** https://github.com/wikycool/Rivet/issues/2  
 **Branch:** `feat/ai-trace-schema`  
 **Blocked by:** Step 0  
@@ -247,7 +247,7 @@ Glossary: **Trace**, **Taint**, **Sink**.
 
 ## Step 2 — Fake tools
 
-**Status:** pending  
+**Status:** done (merged PR https://github.com/wikycool/Rivet/pull/12)  
 **GitHub issue:** https://github.com/wikycool/Rivet/issues/3  
 **Branch:** `feat/ai-fake-tools`  
 **Blocked by:** Step 0  
