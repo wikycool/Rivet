@@ -329,7 +329,7 @@ Note in PR: StubLLM is default for CI; issue #1 said Ollama-first — intentiona
 
 ## Step 3b — Ollama client + CLI + empty REGISTRY
 
-**Status:** pending  
+**Status:** in_progress  
 **GitHub issue:** https://github.com/wikycool/Rivet/issues/4 (closes)  
 **Branch:** `feat/ai-agent-cli`  
 **Blocked by:** Step 3a  

@@ -1,4 +1,4 @@
-"""LLM client protocol and StubLLM for CI (no live model required)."""
+"""LLM client protocol, StubLLM (CI), and optional OllamaClient."""
 
 from __future__ import annotations
 
@@ -64,3 +64,41 @@ class StubLLM:
             inputs=dict(call.inputs),
             from_steps=list(call.from_steps),
         )
+
+
+def ollama_available() -> bool:
+    """True when the ollama package imports and the local server responds."""
+    try:
+        import ollama
+    except ImportError:
+        return False
+    try:
+        ollama.list()
+    except Exception:
+        return False
+    return True
+
+
+class OllamaClient:
+    """Optional live LLM behind the same LLMClient seam. Not used in CI."""
+
+    def __init__(self, model: str = "llama3") -> None:
+        try:
+            import ollama
+        except ImportError as exc:
+            raise ImportError(
+                "Ollama client requires the ollama package: pip install 'rivet[ollama]'"
+            ) from exc
+        self._ollama = ollama
+        self._model = model
+
+    def next_action(
+        self,
+        *,
+        messages: list[Any],
+        available_tools: list[str],
+    ) -> Action:
+        del available_tools  # tool-calling protocol for live models is later work
+        response = self._ollama.chat(model=self._model, messages=messages)
+        content = response["message"]["content"]
+        return FinalAction(text=content)
