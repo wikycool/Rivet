@@ -24,3 +24,4 @@ def test_registry_importable() -> None:
 
     assert isinstance(REGISTRY, dict)
     assert "benign" in REGISTRY
+    assert "attack" in REGISTRY
