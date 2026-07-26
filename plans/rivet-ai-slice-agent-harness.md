@@ -159,7 +159,7 @@ Trace schema    Fake tools
 
 ## Step 0 — Python project bootstrap + CI
 
-**Status:** in_progress  
+**Status:** done (PR https://github.com/wikycool/Rivet/pull/10 — merge to close #9)  
 **GitHub issue:** https://github.com/wikycool/Rivet/issues/9  
 **Branch:** `feat/ai-python-bootstrap`  
 **Blocked by:** none  
