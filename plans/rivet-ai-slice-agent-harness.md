@@ -496,7 +496,7 @@ This is **reachability**, not positional ordering.
 
 ## Step 7 — Simple Layer 2 detector (thresholds only)
 
-**Status:** in_progress  
+**Status:** done (merged PR https://github.com/wikycool/Rivet/pull/19)  
 **GitHub issue:** https://github.com/wikycool/Rivet/issues/8  
 **Branch:** `feat/ai-layer2-detector`  
 **Blocked by:** Step 6  
@@ -540,7 +540,7 @@ Do not use `tool_combo_rarity` in v1.
 
 ## Step 8 — Demo polish + README
 
-**Status:** pending  
+**Status:** in_progress  
 **GitHub issue:** comment + close #1 when done  
 **Branch:** `feat/ai-demo-polish`  
 **Blocked by:** Step 7  
