@@ -32,6 +32,14 @@ Optional live LLM (not required for tests):
 .venv\Scripts\python.exe -m pip install -e ".[ollama]"
 ```
 
+## Demo: attack scenario
+
+Poisoned-doc → DB → email exfiltration (stub LLM):
+
+```powershell
+.venv\Scripts\python.exe -m rivet.agent.run --scenario attack
+```
+
 ## Blueprint
 
 AI harness construction plan: [`plans/rivet-ai-slice-agent-harness.md`](plans/rivet-ai-slice-agent-harness.md)
