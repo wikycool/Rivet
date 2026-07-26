@@ -67,3 +67,5 @@ logs/
 tmp/
 temp/
 .cache/
+.scratch/
+traces/
