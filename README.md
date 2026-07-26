@@ -4,14 +4,16 @@ AI agent security platform with an MCP proxy and provenance graph.
 
 Rivet provides **two-layer defense** for agent workflows:
 
-1. **Layer 1 (rules)** — deterministic information-flow policies that gate tool calls before they execute.
+1. **Layer 1 (rules)** — deterministic information-flow policies that gate tool calls before they execute *(infra — not built yet)*.
 2. **Layer 2 (patterns)** — behavioral signals on provenance graphs to detect anomalous agent behavior.
+
+**Layer 2 v1** is a **threshold** detector on Trace features (trust-boundary reachability + external sinks). **GNN / sklearn are explicitly later** — not used in v1.
 
 ## Project layout
 
 ```
 src/rivet/   Application package (agent, ml, attacks; proxy/policy later)
-docs/        Architecture notes, agent config, ADRs
+docs/        Architecture notes, agent config, ADRs, feature docs
 plans/       Construction blueprints
 tests/       Unit and integration tests
 ```
@@ -32,11 +34,10 @@ Optional live LLM (not required for tests):
 .venv\Scripts\python.exe -m pip install -e ".[ollama]"
 ```
 
-## Demo: attack scenario
-
-Poisoned-doc → DB → email exfiltration (stub LLM):
+## Demo scenarios (StubLLM — no Ollama)
 
 ```powershell
+.venv\Scripts\python.exe -m rivet.agent.run --scenario benign
 .venv\Scripts\python.exe -m rivet.agent.run --scenario attack
 ```
 
@@ -44,6 +45,4 @@ Poisoned-doc → DB → email exfiltration (stub LLM):
 
 AI harness construction plan: [`plans/rivet-ai-slice-agent-harness.md`](plans/rivet-ai-slice-agent-harness.md)
 
-## Status
-
-Step 0 bootstrap in progress — Trace schema and target agent next (issues #2–#8).
+Feature docs: [`docs/features.md`](docs/features.md) · Trace schema: [`docs/trace-schema.md`](docs/trace-schema.md)

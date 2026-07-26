@@ -496,7 +496,7 @@ This is **reachability**, not positional ordering.
 
 ## Step 7 — Simple Layer 2 detector (thresholds only)
 
-**Status:** pending  
+**Status:** in_progress  
 **GitHub issue:** https://github.com/wikycool/Rivet/issues/8  
 **Branch:** `feat/ai-layer2-detector`  
 **Blocked by:** Step 6  
